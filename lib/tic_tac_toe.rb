@@ -113,7 +113,7 @@ end
 
 def winner(board)
   win = won?(board)
-  if(win != false)
+  if(win.kind_of?(Array))
     return board[win[0]]
   end
 end
